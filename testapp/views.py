@@ -24,6 +24,10 @@ def post_example(request):
     return JsonResponse(response, safe=False, json_dumps_params={'indent': 2})
 
 
+def home(request):
+    return render(request, 'testapp/home.html')
+
+
 def gallery(request):
     return render(request, 'testapp/gallery.html')
 

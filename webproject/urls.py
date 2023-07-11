@@ -20,6 +20,7 @@ import testapp.views
 
 
 urlpatterns = [
+    path('', testapp.views.home),
     path('admin/', admin.site.urls),
     path('get_example', testapp.views.get_example),
     path('post_example', testapp.views.post_example),
