@@ -1,3 +1,3 @@
 static_root
 db.sqlite3
-.secret_key
+webproject/.secret_key
