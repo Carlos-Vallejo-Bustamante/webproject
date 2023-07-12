@@ -16,11 +16,11 @@ def get_example(request):
 @csrf_exempt
 def post_example(request):
     response = {'request': {'time': datetime.now().isoformat(),
-                'method': request.method,
-                'path': request.path,
-                'params': request.GET,
-                'headers': dict(request.headers),
-                'body': request.body.decode()}}
+                            'method': request.method,
+                            'path': request.path,
+                            'params': request.GET,
+                            'headers': dict(request.headers),
+                            'body': request.body.decode()}}
     return JsonResponse(response, safe=False, json_dumps_params={'indent': 2})
 
 
